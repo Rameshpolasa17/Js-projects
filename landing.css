@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.top-section{
+    background-image: url(img/landing.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.text-section{
+    color: black;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-left: 16px;
+}
+.text-section h2{
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.lg-text{
+    color: black;
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.black-box{
+    background-color: black;
+    padding: 20px;
+}
+.black-box h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.black-box span{
+    font-size: 72px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px ,1fr));
+}
+.card{
+    max-width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    margin-left: 90px;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 30px;
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 3px 5px black;
+    transition:0.2s ease-in-out;
+
+}
+img{
+    height: 295px;
+    width: 320px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h2{
+    font-weight: 800;
+}
+h2 ,p{
+    margin-left: 20px;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h2{
+    margin-bottom: 10px;
+}
+.bottom-section{
+    display: flex;
+}
+.contact{
+    background-color: paleturquoise;
+}
+.about{
+    background-color: rgb(210, 149, 210);
+}
+.contact, .about{
+    min-height: 200px;
+    padding: 30px;
+    color: black;
+}
+.contact h2,.about h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.contact p,.about p{
+    margin-bottom: 30px;
+}
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: peachpuff;
+    padding: 20px;
+}

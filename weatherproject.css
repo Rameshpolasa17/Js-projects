@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(2,1,39);
+    background: linear-gradient(90deg, rgba(2,1,39,0.8963234952183998) 0%, rgba(30,9,121,0.938340301941089) 35%, rgba(158,0,154,0.9047268565629377) 100%);
+}
+.container{
+    width: 30%;
+    max-width: 470px;
+    background: rgb(1,0,36);
+    background: linear-gradient(90deg, rgba(1,0,36,1) 0%, rgba(30,9,121,1) 35%, rgba(158,0,154,1) 99%);
+    text-align: center;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    border-radius: 51px;
+    border: 2px solid #FE1EF5;
+    box-shadow: 5px 1px 5px #FE1EF5;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_box{
+    width: 250px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.search_bar span{
+    background: white;
+    border-radius: 20px;
+    padding: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.cloud_img{
+    width: 170px;
+    height: 170px;
+    margin: 20px 0px -5px 0px;
+}
+.temp h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 10px;
+}
+.city{
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.humidity_img{
+    width: 60px;
+    height: 60px;
+}
+.humidity{
+    margin-left: 10px;
+}
+.color{
+    color: white;
+}
+.humidity_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.humidity_container{
+    display: flex;
+    align-items: center;
+}
+.humidity_container p{
+    margin-left: 10px;
+}
+.wind_Speed{
+    margin-left: 10px;
+}
+.details{
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+}

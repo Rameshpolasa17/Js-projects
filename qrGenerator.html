@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qrGenerator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Pacifico&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Qr Generator</title>
+</head>
+<body>
+    <div class="container">
+        <p>Enter Your Text or Url</p>
+        <input id="qrText" type="text" placeholder="Enter url">
+        <div id="img_box">
+            <img src="" id="qrImg">
+        </div>
+        <button onclick="generateQr()">Generate Qr Code</button>
+    </div>
+    <script src="qrGenerator.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myntra.css">
+    <link rel="stylesheet" href="bag.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Myntra Clone</title>
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href=""><img class="logo" src="https://logosarchive.com/wp-content/uploads/2021/12/Myntra-icon-logo.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Home & Living</a>
+            <a href="">Beauty</a>
+            <a href="">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar"><span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search for products,brands and more">
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+
+            <a class="action_container" href="myntra.html">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="bag-page">
+            <div class="bag-items-container">
+            </div>
+            <div class="bag-summary">
+            </div>
+    
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_text">
+                <h3>Online Shopping</h3>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Home & Living</a>
+                <a href="">Beauty</a>
+                <a href="">Gift Cards</a>
+                <a href="">Myntra Insider</a>
+            </div>
+
+            <div class="footer_text">
+                <h3>Customer Policies</h3>
+                <a href="">Contact Us</a>
+                <a href="">FAQ</a>
+                <a href="">T&C</a>
+                <a href="">Terms Of Use</a>
+                <a href="">Track Orders</a>
+                <a href="">Shipping</a>
+                <a href="">Cancellation</a>
+            </div>
+
+            <div class="footer_text">
+                <h3>Useful links</h3>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+                <a href="">Site Map</a>
+                <a href="">Corporate Information</a>
+                <a href="">Whitehat</a>
+                <a href="">Clear Trip</a>
+            </div>
+
+
+        </div>
+        <div class="foot">
+            <div class="popular">
+                <h3>Popular Searches</h3>
+                <a href="">Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Suit | Chinos | Shoes | Adidas Shoes | Woodland |Shoes | Jewellery | Designers Sarees</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyrights">
+            <div class="bottom_text">In case of any concern, <span>Contact Us</span></div>
+            <div class="bottom_text">© 2023 www.myntra.com. All rights reserved.</div>
+            <div class="bottom_text">A Flipkart company</div>
+        </div>
+        
+    </footer>
+</body>
+<script src="data.js"></script>
+<script src="myntra.js"></script>
+<script src="bag.js"></script>
+</html>
+
+
+import { useState,useCallback } from 'react'
+
+import './App.css'
+
+function App() {
+  const [lenght, setlenght] = useState(8)
+  const [numAllowed, setnumAllowed] =useState(false)
+  const [charAllowed , setcharAllowed] = useState(false)
+  const [password, setpassword] = useState("")
+
+  const passwordGenerator = useCallback(()=>{
+    let pass=""
+    let str=
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    if (numAllowed) str+="0123456789"
+    if (charAllowed) str+="!@#$%^&*(){}[]?/~"
+
+  } , [lenght,numAllowed,charAllowed,setpassword])
+
+  return (
+    <>
+      <h1 className='text-4xl text-white text-center'>Password Generator</h1>
+    </>
+  )
+}
+
+export default App

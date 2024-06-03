@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #403535
+}
+.stopwatch{
+    width: 90%;
+    max-width: 236px;
+    margin: 200px auto 0px;
+    padding: 40px 0px;
+}
+.buttons{
+    cursor: pointer;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.stopwatch h1{
+    font-size: 64px;
+    margin-top: 60px;
+    color: white;
+}
+button{
+    width: 50px;
+    padding: 4px;
+}

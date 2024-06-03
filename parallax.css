@@ -1,0 +1,96 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+}
+.pimg1{
+    background-image: url(img/summer.jpg);
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url(img/pexels-jacek-mleczek-801780.jpg);
+    min-height: 100%;
+}
+.pimg3{
+    background-image: url(img/pexels-marcel-kodama-2179424.jpg);
+    min-height: 100%;
+}
+.pimg4{
+    background-image: url(img/4.jpg);
+    min-height: 100%;
+}
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.bgtext1{
+    background-color: #FFE17B;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bgtext2{
+    background-color: snow;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bgtext3{
+    background-color: palevioletred;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bgtext4{
+    background-color: green;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* .section{
+    padding: 50px 80px;
+    text-align: center;
+} */
+.section-summer{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: #FFE17B;
+    color: black;
+}
+.section-winter{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: snow;
+    color: black;
+}
+.section-spring{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: palevioletred;
+    color: black;
+}
+.section-rainy{
+    padding: 50px 80px;
+    text-align: center;
+    background-color: green;
+    color: black;
+}
